@@ -1,0 +1,61 @@
+document.parendNode.removechilde(document.head)    -- css 지우기 
+
+./ ../ / 
+
+feildset
+
+<input type="checkbox">     //중복 선택가능
+<input type="radio">      //택1하는 
+
+
+layout 배치   
+<header> 
+<nav>
+<aside>
+<main>
+<footer>
+
+
+포지션 중요!!
+기본 포지션 : static 
+relative : 현재기준으로 움직임
+absolute : 부모들의 position이 static이 아닌경우를 찾음 
+fixed : 
+static :
+
+containing block : 중요!!
+
+css 우선순위
+
+text-align-right;
+float을 하면 둥둥떠있다고 생각하면 된다. 다음컨텐츠에 들어감
+overflow : visible (기본) ,hidden, auto(hidden 과 auto는 block
+formatting context가 로 인해서 부모를 감싸게 됨 -- 이해하기&***)
+dispaly: inline-block
+width:100%                -- 이것을 해도됨 
+
+float:right 하고 clear : both 해도 되는데
+요즘 flex를 많이씀
+
+
+nth-of-type
+
+margin collapsing
+형제간에 충돌 
+해결방법 - display : inline-block 
+           width: 100%   **********
+
+
+가로간에 문제 : float
+세로간의 문제: vertical-align: top;
+
+
+hover -- 손을 올렸을 때 뜨게 하는것 
+z- index : 먼저 부모끼리 비교  그다음 자식 부모의 z-index가 낮은데 자식이 높다고 해도 낮음 
+
+over-flow : 내용이 넘쳐 흐를때 사용
+white-space : 
+
+
+
+flex 

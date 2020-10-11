@@ -1,0 +1,47 @@
+flex blog : https://studiomeal.com/archives/197
+margin: 0 auto;  --중앙 정렬
+
+#<id> > h1 {          > : 자식 >가 없으면 자손 
+
+}
+
+blind{
+    position: absoulute;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    margin: -1px;
+    width:1px;
+    height:1px;
+}   --눈에는 안보이는데 시각장애인들을 위해 설명남겨놓는것을 숨김 
+
+display : none;  
+display : block  -- div의 디폴트값 (margin이 생겨서 margin있는곳에 못옴)
+display : inline-block  -- width와 height를 줄수있음 
+display : inline  -- 자기 컨텐츠만 차지
+
+이미지 스프라이트 
+background-image: url();
+background-position:          --background-image를 위치 조정
+background-repeat
+background-size  -- 이미지 전체 사이즈 
+
+text-indent: 10%  -- 글자를 10%들여쓰기 
+text-decoration :none --a 태그 밑줄 없애기
+overflow :hidden  -- 넘치는거 안보이게 
+
+box-sizing : context-box -- 기본
+box-sizing : boder-box -- 내가 지정한 width가 컨택트,패딩,보더 다 합친거 
+
+outline : none  -- input태그의 테두리 없애기 
+
+같은 형제 태그끼리 height가 다르면 높낮이가 안맞음 이럴때 사용
+vertical-align : 
+
+//중요!!!   -block format context, stacking context 
+position :absoulute    -- 부모의 position이 static이 아닌 곳까지 감 
+position : relative
+position : static :  -- 기본 
+
+
+
+

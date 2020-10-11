@@ -1,0 +1,249 @@
+/* 선택자  */
+/* > 자식선택자
+#header_search h1 --> 자손선택자 */
+/* 모든 태그 * */
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3{
+    margin: 0;
+}
+.inline-block{
+    display: inline-block;
+}
+
+#header-top{
+    /* position: absolute;
+    top: 12px;
+    right: 27px; */
+    text-align: right;
+}
+#header-top span {
+    color:#888;
+    letter-spacing: 1px;
+    font-size: 11px;
+    line-height: 22px;
+}
+
+
+.center-align{
+    margin: 0 auto;
+    width: 790px;
+}
+div#header_search h1{       
+    width: 150px;
+    height: 44px;
+    display: inline-block;
+    background-image: url(./naverlogo.png);
+    background-position: -4px 10px;        /*백그라운드 이미지 위치 조정*/
+    text-indent: 100%; 
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+/* #header_search >h1 span{
+    display: none;
+} */
+div#header_search a{
+    vertical-align: middle;
+    text-decoration: none;
+}
+div#header_search h2 {
+    display: none;
+}
+
+#header_search fieldset {
+    vertical-align: middle;
+    margin-left: 20px;
+    border:12px 0 12px 10px;
+    width: 520px;
+    height :40px;
+    border: 2px solid green;
+    display: inline-block;
+    position: relative;
+    
+    
+}
+#header_search fieldset button {
+    width: 30px;
+    height: 30px;
+    border :none;
+    margin: 0;
+    position: absolute;
+    right:0;
+    top:0;
+    
+}
+#header_search fieldset input {
+    border : none;
+    padding:0;
+    outline: none;
+    width: 300px;
+    height: 23px;
+}
+#search-image{
+    background-image: url(./naverlogo.png);
+    
+}
+.blind{
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+nav{
+    height: 30px;
+    border-top:1px solid #f1f3f6;
+    border-bottom: 1px solid #f1f3f6;
+    
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#nav-menu li span:first-child{
+    <!-- 공통적인거 넣기  -->
+}
+#nav-menu li{
+    display: inline-block;
+}
+#nav-menu li:first-child span:first-child{
+
+}
+#nav-menu li:nth-child(2) span:first-child{
+
+}
+nav div:first-child{
+    position: relative;
+}
+
+#search-ranking {
+    position: absolute;
+    top: 0px;
+    right: 41px;
+    width:150px;
+    font-size: 14px;
+}
+#search-ranking:hover ul{
+    display: inline-block;
+}
+#search-ranking ul{
+    display: none;
+    list-style-type: none;
+    padding: 0 17px;
+    width: 200px;
+    height: 200px;
+    border : 1px solid #aaa;
+    background-color: white;
+    position: absolute;
+    right:0;
+    top:0;
+    z-index: 100;
+}
+
+#rank-number {
+    margin-top: -9px;
+    color: #00ab33;
+    font-size: 16px;
+
+}
+
+#rank-title {
+    letter-spacing: -1px;
+    font-size: 14px;
+}
+
+#main-ad{
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+    background-color: #ccc;
+}
+#main-login{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background-color: #ccc;
+}
+#main-ytn{
+    display: inline-block;
+    width: 500px;
+    height: 100px;
+    vertical-align: top;
+    background-color: #ccc;
+    margin-bottom: 1px;
+}
+#main-ytn h3, 
+#main-ytn ol{
+    display: inline-block;
+}
+#main-newsstand{
+    display: inline-block;
+    width: 500px;
+    height: 200px;
+    
+    background-color: #ccc;
+
+}
+/* calc(100% / 6)  -- 연속적인것을 정확히 나눠줌  */
+#main-newsstand h3{
+    height: 30px;
+    border-bottom: 1px solid green ;
+}
+#main-newsstand ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    background-color: yellow;
+
+}
+#main-newsstand li{
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+#main-newssatand li img{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+}
+/* ######################세로가운데정렬 */
+#main-weather{
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    background-color: #ccc;
+    vertical-align: top;
+}
+#main-category{
+    display: inline-block;
+    width: 500px;
+    height: 837px;
+    background-color: #ccc;
+}
+#main-shopping{
+    display: inline-block;
+    width: 200px;
+    height: 837px;
+    background-color: #ccc;
+
+}
+
+#z-example{
+    position: absolute;
+    background: yellow;
+    width:100px;
+    height: 100px;
+    z-index: 1 ;
+}
+#z-inner{
+    position: absolute;
+    background: red;
+    width:50px;
+    height: 50px;
+    z-index: 1000 ;
+}
